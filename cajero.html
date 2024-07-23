@@ -3,30 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+
     <title>ATM</title>
 </head>
-<body>
-    <h1>Entraste al Cajero</h1>
+<body onload="loadUser()">
     <div class="atm-container">
         <h1>Pagina del Cajero</h1>
         <p>Bienvenido </p>  
-        <label for="nombre">Nombre:</label>
+        <label for="nombre">Nombre: </label>
+        <p id="nombre"></p>
         <!--<input type="text" id="nombre" placeholder="Ingrese su nombre">-->
 
         <button onclick="consultarSaldo()">Consultar Saldo</button>
         <p id="resultado"></p>
-        <input type="number" id="saldo-consulta" placeholder="$">
+        
         <button onclick="agregarSaldo()">Agregar Saldo</button>
         <input type="number" id="saldo-agregar" placeholder="$">
+
         <button onclick="retirarSaldo()">Retirar Saldo</button>
         <input type="number" id="saldo-retirar" placeholder="$">
-        <div class="output" id="output"></div>
+
+        <button onclick="Logout()" class="Logout">Salir Sección</button>
         
     </div>
     
 
 
-    <button onclick="Logout()">Salir Seccion</button>
+    
 
 
     <script src="main.js"></script>
