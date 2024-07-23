@@ -244,7 +244,7 @@ function GetUser(){
 function consultarSaldo() {
     const nombreIn = GetUser();
     const saldo = getSaldo(nombreIn);
-    alert("tu saldo es: "+saldo);
+    alert( nombreIn +"tu saldo es: "+saldo);
     if (saldo !== null) {
         document.getElementById('resultado').textContent = `El saldo de ${nombreIn} es $${saldo}.`;
     } else {
